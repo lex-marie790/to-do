@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+html {
+  background-image: url('./Images/jonathan-borba-qRXSQuEGZ_U-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+  text-align: center;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header:hover {
+  font-size: larger;
+  transition-duration: 1ms;
+  color: #5E4AE3;
+}
+
+.btn {
+  display: inline-block;
+  background: #5E4AE3;
+  color: #EEE5E9;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+  background-color:#02A9EA;
+}
+
+.btn:active {
+  transform: scale(0.50);
+}
+
+.btn-block {
+  display: block;
+  width: 98%;
+}
+
+.task {
+  display: block;
+  text-align: center;
+  background: rgba(240, 240, 240, 0.6);
+  /* margin: 5px;
+  padding: 10px 20px; */
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 10px solid #12664F;
+}
+
+.add-form {
+  color: black;
+  margin-bottom: 40px;
+  background: rgba(240, 240, 240, 0.6);
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 96%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+/* .form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
 }
